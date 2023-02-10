@@ -13,20 +13,15 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-between`,
     }}
   >
-    <Link
-      style={{
-        fontSize: `var(--font-sm)`,
-        textDecoration: `none`,
-      }}
-    >
-      {siteTitle}
-    </Link>
+  <a href="/" >
     <img
       alt="Gatsby logo"
       height={20}
       style={{ margin: 0 }}
       src="https://spinsforsale.com/wp-content/uploads/2023/02/spinsforsale-logo1.png"
     />
+  </a>
+
    <Nav />
   </header>
 )

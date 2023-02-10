@@ -1,6 +1,7 @@
 import * as React from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const PageTemplate = ({ data }) => (
   <Layout>
@@ -10,11 +11,17 @@ const PageTemplate = ({ data }) => (
 
  export default PageTemplate
 
+ export const Head = ({ data }) => <Seo title= { data.wpPage.seo.title }  description={ data.wpPage.seo.metaDesc }/>
+
  export const query = graphql`
   query($id: String!) {
     wpPage(id: { eq: $id }) {
       title
       content
+      seo {
+        title
+        metaDesc
+      }
     }
   }
  `

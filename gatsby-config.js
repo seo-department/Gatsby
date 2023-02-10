@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Welcome to Top Spin For Sale`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: ``,
+    description: ``,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://spinsforsale.com/`,
   },
   plugins: [
 

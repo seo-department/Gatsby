@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => (
   </Layout>
 
 )
-export const Head = () => <Seo title="Home" />
+export const Head = ({ data }) => <Seo title= { data.wpPage.seo.title }  description={ data.wpPage.seo.metaDesc }/>
 
 export default IndexPage
 
@@ -19,6 +19,10 @@ export const query = graphql`
         wpPage(uri: { eq: "/" }) {
             title
             content
+            seo {
+              title
+              metaDesc
+            }
           }    
         }      
  `

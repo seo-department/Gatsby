@@ -29,9 +29,12 @@ exports.createPages = ({ graphql, actions }) => {
     allWpPage {
       edges {
         node {
-          id
           uri
-          slug
+          id
+          seo {
+            title
+            metaDesc
+          }
         }
       }
     }
