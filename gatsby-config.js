@@ -9,12 +9,28 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Welcome to Top Spin For Sale`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // the only required plugin option for WordPress is the GraphQL url.
+        url:
+          process.env.WPGRAPHQL_URL ||
+          `https://spinsforsale.com/graphql`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://spinsforsale.com/`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

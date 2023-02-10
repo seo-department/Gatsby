@@ -7,12 +7,48 @@
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
-exports.createPages = async ({ actions }) => {
+// exports.createPages = async ({ actions }) => {
+//   const { createPage } = actions
+//   createPage({
+//     path: "/using-dsg",
+//     component: require.resolve("./src/templates/using-dsg.js"),
+//     context: {},
+//     defer: true,
+//   })
+// }
+
+
+
+
+const path = require(`path`)
+
+exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
-    defer: true,
-  })
-}
+  return graphql(`
+  {
+    allWpPage {
+      edges {
+        node {
+          id
+          uri
+          slug
+        }
+      }
+    }
+  }
+
+  `).then(result => {
+    result.data.allWpPage.edges.forEach(({ node }) => {
+      createPage({
+        // Decide URL structure
+        path: node.uri,
+        // path to template
+        component: path.resolve(`./src/templates/page-template.js`),
+        context: {
+          // This is the $slug variable
+          // passed to blog-post.js
+          id: node.id,
+        },
+      })
+    })
+  })}
