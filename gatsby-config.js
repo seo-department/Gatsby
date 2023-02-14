@@ -15,6 +15,16 @@ module.exports = {
     siteUrl: `https://spinsforsale.com/`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://spinsforsale.com`,
+        sitemap: `https://spinsforsale.com/sitemap_index.xml`,
+        policy: [{userAgent: `*`, allow: `/`, Disallow: `/buy-now/`}]
+      }
+    },
 
     {
       resolve: `gatsby-source-wordpress`,

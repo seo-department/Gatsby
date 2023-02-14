@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import Nav from '../components/nav'
 
 
@@ -21,8 +20,12 @@ const Header = ({ siteTitle }) => (
       src="https://spinsforsale.com/wp-content/uploads/2023/02/spinsforsale-logo1.png"
     />
   </a>
-
+ 
+   
    <Nav />
+
+
+
   </header>
 )
 
