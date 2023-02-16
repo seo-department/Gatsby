@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
             <ul>
               <li><Link to="/privacy-policy">Privacy Policy</Link></li>
               <li><Link to="/terms-and-conditions">Terms and Conditions</Link></li>
-              <li><Link to="/">Sitemap</Link></li>
+              <li><Link to="/sitemap-0.xml">Sitemap</Link></li>
             </ul>
           </div>
           

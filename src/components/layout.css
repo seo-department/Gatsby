@@ -39,6 +39,11 @@ footer {
  
 }
 
+button.nav__MenuIcon-sc-qpvvgq-0.dKxpjK {
+  display: none;
+}
+
+
 .courses-one__single-content-review-box {
   display: none;
 }
@@ -92,9 +97,11 @@ h1 {
 div#gatsby-focus-wrapper {
   background-image: url(https://spinsforsale.com/wp-content/uploads/2023/02/Frame-1.png) !important;
   background-position: left top !important;
-  background-size: auto !important;
+  /* background-size: auto !important; */
   background-repeat: repeat !important;
   background-attachment: fixed !important;
+  background-position: 100%;
+  background-size: cover;
 }
 
 .courses-one__single.center {
@@ -165,6 +172,23 @@ button.nav__MenuIcon-ixYmaf.kLmQQR {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) {
+
+  button.nav__MenuIcon-sc-qpvvgq-0.dKxpjK {
+    display: flex;
+  }
+
+.footer-links li {
+  display: block !important;
+  text-align: center;
+}
+.footer-links {
+    float: none;
+}
+
+
+  h1 {
+    font-size: 25px !important;
+}
 
   .main-nav ul {
     margin-top: 26px;

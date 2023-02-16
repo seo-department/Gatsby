@@ -12,10 +12,10 @@ module.exports = {
     title: ``,
     description: ``,
     author: `@gatsbyjs`,
-    siteUrl: `https://spinsforsale.com/`,
+    siteUrl: `https://spinsforsale.com`,
   },
   plugins: [
-    `gatsby-plugin-sitemap`,
+    
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-robots-txt`,
@@ -46,7 +46,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/public/static`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -65,5 +65,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }

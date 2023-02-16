@@ -26,15 +26,15 @@ div {
   position: relative;
 
   :first-child {
-    transform: ${({nav}) => (nav ? 'rotate(45deg)' : 'rotate(0)' )}
+    transform: ${({nav}) => nav ? 'rotate(45deg)' : 'rotate(0)' }
   };
 
   :nth-child(2) {
-    opacity : ${({nav}) => (nav ? "0" : "1" )}
+    opacity : ${({nav}) => nav ? "0" : "1" }
   };
 
   :nth-child(3) {
-    transform: ${({nav}) => (nav ? 'rotate(-45deg)' : 'rotate(0)') }
+    transform: ${({nav}) => nav ? 'rotate(-45deg)' : 'rotate(0)' }
   };
 
 }
@@ -86,7 +86,7 @@ return(
     <div>
 
     
-      <MenuIcon onClick={() => showNav(!nav)}>
+      <MenuIcon nav= {nav} onClick={() => showNav(!nav)}>
         <div />
         <div />
         <div />
@@ -112,7 +112,7 @@ return(
         </div>
 
 
-        <MenuLinks nav = {nav}>
+      <MenuLinks nav = {nav}>
         <div class="main-nav">
         <ul style={{ listStyle: `none`, display: `grid`, margin: `30px 1px 0px 0px` }}>
               {pageMenu.allWpMenuItem.edges.map(item => (
@@ -131,8 +131,7 @@ return(
               ))}
             </ul>
         </div>
-
-          </MenuLinks>
+      </MenuLinks>
       
     </div>
   )

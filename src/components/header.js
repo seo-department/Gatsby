@@ -2,6 +2,7 @@ import * as React from "react"
 import Nav from '../components/nav'
 
 
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
