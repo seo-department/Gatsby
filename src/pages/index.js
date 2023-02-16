@@ -6,7 +6,9 @@ import { graphql } from 'gatsby'
 
 const IndexPage = ({ data }) => (
   <Layout>
+  
     <div dangerouslySetInnerHTML={{__html: data.wpPage.content}} />
+    
   </Layout>
 
 )

@@ -32,13 +32,13 @@ module.exports = {
         // the only required plugin option for WordPress is the GraphQL url.
         url:
           process.env.WPGRAPHQL_URL ||
-          `https://spinsforsale.com/graphql`,
+          `https://wordpress-930615-3276951.cloudwaysapps.com/graphql`,
       },
     },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://spinsforsale.com/`,
+        siteUrl: `https://spinsforsale.com`,
       },
     },
     `gatsby-plugin-image`,
@@ -46,7 +46,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/public/static`,
+        path: `${__dirname}/public/static/`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -62,9 +62,12 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/spinsforsale-favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
   ],
 }

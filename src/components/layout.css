@@ -81,7 +81,12 @@ footer {
   background: #262526;
   line-height: 53px;
 }
-
+header {
+  height: 91px;
+}
+header img {
+  margin-top: 15px;
+}
 
 h1 {
   font-size: 52px;
@@ -95,7 +100,7 @@ h1 {
 }
 
 div#gatsby-focus-wrapper {
-  background-image: url(https://spinsforsale.com/wp-content/uploads/2023/02/Frame-1.png) !important;
+  background-image: url(https://wordpress-930615-3276951.cloudwaysapps.com/wp-content/uploads/2023/02/Frame-1.png) !important;
   background-position: left top !important;
   /* background-size: auto !important; */
   background-repeat: repeat !important;

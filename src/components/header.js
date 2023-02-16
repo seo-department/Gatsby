@@ -1,6 +1,8 @@
+import { Link } from "gatsby"
 import * as React from "react"
 import Nav from '../components/nav'
-
+import LogoImage from '../images/spinsforsale-logo1.png'
+import { Image } from "react-bootstrap"
 
 
 const Header = ({ siteTitle }) => (
@@ -13,14 +15,10 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-between`,
     }}
   >
-  <a href="/" >
-    <img
-      alt="Gatsby logo"
-      height={20}
-      style={{ margin: 0 }}
-      src="https://spinsforsale.com/wp-content/uploads/2023/02/spinsforsale-logo1.png"
-    />
-  </a>
+  <Link to="/">
+    <Image src={ LogoImage } fluid alt="Spins for sale Logo" title="Spins for sale Logo" />
+    
+  </Link>
  
    
    <Nav />
