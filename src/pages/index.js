@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => (
   </Layout>
 
 )
-export const Head = ({ data }) => <Seo title= { data.wpPage.seo.title }  description={ data.wpPage.seo.metaDesc }/>
+export const Head = ({ data }) => <Seo title= { data.wpPage.seo.title }  description={ data.wpPage.seo.metaDesc } robots= {"index, follow"}/>
 
 export default IndexPage
 

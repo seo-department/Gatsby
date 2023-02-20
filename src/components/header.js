@@ -5,7 +5,7 @@ import LogoImage from '../images/spinsforsale-logo1.png'
 import { Image } from "react-bootstrap"
 
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     style={{
       margin: `0 auto`,

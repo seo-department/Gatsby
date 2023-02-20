@@ -15,6 +15,13 @@ module.exports = {
     siteUrl: `https://spinsforsale.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: `GTM-KVRHQCW`,
+        includeInDevelopment: false,
+      },
+    },
     
     `gatsby-plugin-styled-components`,
     {
