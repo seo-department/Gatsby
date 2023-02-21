@@ -92,7 +92,7 @@ return(
         <div />
       </MenuIcon>
 
-      <div class="main-nav-bar">
+      <div className="main-nav-bar">
         <ul style={{ listStyle: `none`, display: `flex`, margin: 0 }}>
               {pageMenu.allWpMenuItem.edges.map(item => (
                 <li key={item.node.uri} style={{ margin: `0 10px` }}>
@@ -113,7 +113,7 @@ return(
 
 
       <MenuLinks nav = {nav}>
-        <div class="main-nav">
+        <div className="main-nav">
         <ul style={{ listStyle: `none`, display: `grid`, margin: `30px 1px 0px 0px` }}>
               {pageMenu.allWpMenuItem.edges.map(item => (
                 <li key={item.node.uri} style={{ margin: `0 10px` }}>

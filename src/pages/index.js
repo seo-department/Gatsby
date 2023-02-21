@@ -1,15 +1,18 @@
-import * as React from "react"
+import React from 'react'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from 'gatsby'
+import Modal from '../components/modal'
+
 
 
 const IndexPage = ({ data }) => (
   <Layout>
-  
-    <div dangerouslySetInnerHTML={{__html: data.wpPage.content}} />
     
+    <Modal/>
+     
   </Layout>
+  
 
 )
 export const Head = ({ data }) => <Seo title= { data.wpPage.seo.title }  description={ data.wpPage.seo.metaDesc } robots= {"index, follow"}/>

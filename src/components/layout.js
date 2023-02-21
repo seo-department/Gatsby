@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
         >
           © {new Date().getFullYear()} &middot; SEO Copyright
           {` `}
-          <div class="footer-links">
+          <div className="footer-links">
             <ul>
               <li><Link to="/privacy-policy">Privacy Policy</Link></li>
               <li><Link to="/terms-and-conditions">Terms and Conditions</Link></li>
