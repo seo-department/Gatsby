@@ -256,6 +256,15 @@ div#gatsby-focus-wrapper {
   background-size: cover;
 }
 
+.backroundimage{
+  background-position: left top !important;
+  /* background-size: auto !important; */
+  background-repeat: repeat !important;
+  background-attachment: fixed !important;
+  background-position: 100%;
+  background-size: cover;
+}
+
 .courses-one__single.center {
   background: #fff;
   border-radius: 10px;

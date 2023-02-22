@@ -1,8 +1,8 @@
 import { Link } from "gatsby"
 import * as React from "react"
 import Nav from '../components/nav'
-import LogoImage from '../images/spinsforsale-logo1.png'
-import { Image } from "react-bootstrap"
+
+import { StaticImage } from "gatsby-plugin-image"
 
 
 const Header = () => (
@@ -16,7 +16,7 @@ const Header = () => (
     }}
   >
   <Link to="/">
-    <Image src={ LogoImage } fluid alt="Spins for sale Logo" title="Spins for sale Logo" />
+    <StaticImage src="../images/spinsforsale-logo1.png" fluid alt="Spins for sale Logo" title="Spins for sale Logo" />
     
   </Link>
  

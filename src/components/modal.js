@@ -1,22 +1,8 @@
 import React from 'react';
 import { useState } from "react"
-
-import LogoImage from '../images/spinsforsale-logo1.png'
-import dragons from '../images/5-dragons-ultra.png'
-import buffalo from '../images/buffalo-slot-machine.png'
-import dune from '../images/dune-slot-machine.png'
-import fu_dai from '../images/fu-dai-slot.png'
-import lightning from '../images/lightning-link-cabinet.png'
-import money_mania from '../images/money-mania-sphinx-fire.png'
-import super_times from '../images/super-times-pay-super-stacks-slot-machine.png'
-import triple from '../images/triple-fortune-dragon-rising.png'
-import fortune from '../images/wheel-of-fortune.png'
-
-import { Image } from 'react-bootstrap';
-import Layout from "../components/layout"
-import Seo from "../components/seo"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Backdrop from './backdrop/backdrop';
+import { StaticImage } from 'gatsby-plugin-image';
 
 
 
@@ -48,7 +34,7 @@ const Modal = () => {
                 <div className="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div className="courses-one__single center">
                         <div className="courses-one__single-img">
-                            <Link to="/" target="_blank" rel="nofollow"><Image fluid src= {triple} alt="Triple Fortune" /></Link>
+                            <Link to="/" target="_blank" rel="nofollow"><StaticImage fluid src= "../images/triple-fortune-dragon-rising.png" alt="Triple Fortune" /></Link>
                         </div>
                         <div className="courses-one__single-content">
                             <p className="courses-one__single-content-title">Triple Fortune</p>
@@ -83,7 +69,7 @@ const Modal = () => {
                 <div className="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div className="courses-one__single center">
                         <div className="courses-one__single-img" >
-                            <Link  to="/" target="_blank" rel="nofollow"><Image fluid src={money_mania} alt="Money Mania" /></Link>
+                            <Link  to="/" target="_blank" rel="nofollow"><StaticImage fluid src="../images/money-mania-sphinx-fire.png" alt="Money Mania" /></Link>
                         </div>
                         <div className="courses-one__single-content">
                             <p className="courses-one__single-content-title">Money Mania</p>
@@ -118,7 +104,7 @@ const Modal = () => {
                 <div className="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div className="courses-one__single center">
                         <div className="courses-one__single-img" >
-                            <Link  to="/" target="_blank" rel="nofollow"><Image money_mania src= {fortune} alt="Wheel of Fortune" /></Link>
+                            <Link  to="/" target="_blank" rel="nofollow"><StaticImage fluid src= "../images/wheel-of-fortune.png" alt="Wheel of Fortune" /></Link>
                         </div>
                         <div className="courses-one__single-content">
                             <p className="courses-one__single-content-title">Wheel of Fortune</p>
@@ -152,7 +138,7 @@ const Modal = () => {
                 <div className="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div className="courses-one__single center">
                         <div className="courses-one__single-img" >
-                            <Link  to="/" target="_blank" rel="nofollow"><Image fluid src={dragons} alt="5 dragons" /></Link>
+                            <Link  to="/" target="_blank" rel="nofollow"><StaticImage fluid src="../images/5-dragons-ultra.png" alt="5 dragons" /></Link>
                         </div>
                         <div className="courses-one__single-content">
                             <p className="courses-one__single-content-title">5 dragons</p>
@@ -187,7 +173,7 @@ const Modal = () => {
                 <div className="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div className="courses-one__single center">
                         <div className="courses-one__single-img" >
-                            <Link  to="/" target="_blank" rel="nofollow"><Image fluid src={super_times} alt="Super Times" /></Link>
+                            <Link  to="/" target="_blank" rel="nofollow"><StaticImage fluid src="../images/super-times-pay-super-stacks-slot-machine.png" alt="Super Times" /></Link>
                         </div>
                         <div className="courses-one__single-content">
                             <p className="courses-one__single-content-title">Super Times</p>
@@ -221,7 +207,7 @@ const Modal = () => {
                 <div className="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div className="courses-one__single center">
                         <div className="courses-one__single-img" >
-                            <Link  to="/" target="_blank" rel="nofollow"><Image fluid src={buffalo} alt="Buffalo Slot" /></Link>
+                            <Link  to="/" target="_blank" rel="nofollow"><StaticImage fluid src="../images/buffalo-slot-machine.png" alt="Buffalo Slot" /></Link>
                         </div>
                         <div className="courses-one__single-content">
                             <p className="courses-one__single-content-title">Buffalo Slot</p>
@@ -255,7 +241,7 @@ const Modal = () => {
                 <div className="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div className="courses-one__single center">
                         <div className="courses-one__single-img" >
-                            <Link  to="/" target="_blank" rel="nofollow"><Image fluid src={dune} alt="Dune slot" /></Link>
+                            <Link  to="/" target="_blank" rel="nofollow"><StaticImage fluid src="../images/dune-slot-machine.png" alt="Dune slot" /></Link>
                         </div>
                         <div className="courses-one__single-content">
                             <p className="courses-one__single-content-title">Dune slot</p>
@@ -291,7 +277,7 @@ const Modal = () => {
                 <div className="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div className="courses-one__single center">
                         <div className="courses-one__single-img" >
-                            <Link  to="/" target="_blank" rel="nofollow"><Image fluid src={lightning} alt="Lightning link" /></Link>
+                            <Link  to="/" target="_blank" rel="nofollow"><StaticImage fluid src="../images/lightning-link-cabinet.png" alt="Lightning link" /></Link>
                         </div>
                         <div className="courses-one__single-content">
                             <p className="courses-one__single-content-title">Lightning link</p>
@@ -324,7 +310,7 @@ const Modal = () => {
                 <div className="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div className="courses-one__single center">
                         <div className="courses-one__single-img" >
-                            <Link  to="/" target="_blank" rel="nofollow"><Image fluid src={fu_dai} alt="fu dai slot" /></Link>
+                            <Link  to="/" target="_blank" rel="nofollow"><StaticImage fluid src="../images/fu-dai-slot.png" alt="fu dai slot" /></Link>
                         </div>
                         <div className="courses-one__single-content">
                             <p className="courses-one__single-content-title">Fu dai slot</p>
@@ -358,7 +344,7 @@ const Modal = () => {
                 <div className="col-xl-3 col-lg-6 col-md-6" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div className="courses-one__single center">
                         <div className="courses-one__single-img" >
-                            <Link  to="/" target="_blank" rel="nofollow"><Image fluid src={fu_dai} alt="Fu dai slot" /></Link>
+                            <Link  to="/" target="_blank" rel="nofollow"><StaticImage fluid src="../images/fu-dai-slot.png" alt="Fu dai slot" /></Link>
                         </div>
                         <div className="courses-one__single-content">
                             <p className="courses-one__single-content-title">Fu dai slot</p>
@@ -407,7 +393,7 @@ const Modal = () => {
                 
                 <div className="modal-dialog">
                     <div className="loginmodal-container">
-                        <center><Image src={ LogoImage } fluid alt="Spins for sale Logo" title="Spins for sale Logo" /></center>
+                        <center><StaticImage src="../images/spinsforsale-logo1.png" fluid alt="Spins for sale Logo" title="Spins for sale Logo" /></center>
                         <p>Welcome To Spins For Sales</p>
                         <form>
                             <input type="text" name="email" placeholder="Email"/>

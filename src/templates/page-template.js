@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+
 const PageTemplate = ({ data }) => (
   <Layout>
     <div dangerouslySetInnerHTML={{ __html: data.wpPage.content }} />
