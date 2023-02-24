@@ -23,7 +23,9 @@ module.exports = {
       },
     },
     
+    
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-use-query-params`,
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {

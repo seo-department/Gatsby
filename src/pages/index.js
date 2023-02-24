@@ -4,15 +4,11 @@ import Seo from "../components/seo"
 import { graphql } from 'gatsby'
 import Modal from '../components/modal'
 
+const IndexPage = ({data}) => (
 
-
-const IndexPage = ({ data }) => (
   <Layout>
-    
     <Modal/>
-     
   </Layout>
-  
 
 )
 export const Head = ({ data }) => <Seo title= { data.wpPage.seo.title }  description={ data.wpPage.seo.metaDesc } robots= {"index, follow"}/>

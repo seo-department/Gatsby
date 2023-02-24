@@ -14,7 +14,9 @@
   font-family: roboto;
 }
 
-
+input.login.loginmodal-submit {
+  cursor: pointer;
+}
 
 .modal.fade {
   position: fixed;
@@ -36,17 +38,34 @@
 }
 
 .loginmodal-container input[type=submit] {
-  width: 100%;
+  width: 48%;
   display: block;
   margin-bottom: 10px;
   position: relative;
+}
+
+.loginmodal-container p {
+  border-bottom: 2px solid #ef5161;
+  padding-top: 14px;
+}
+
+button.modal-button {
+  float: right;
+  width: 48%;
+  background: #ef5161;
+  border: none;
+  color: #fff;
+  line-height: 48.9px;
+  font-weight: bold;
+  margin-top: -60px;
+  cursor: pointer;
 }
 
 .loginmodal-container input[type=text], input[type=password] {
   height: 44px;
   font-size: 16px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background: #fff;
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
@@ -246,14 +265,18 @@ h1 {
   background: #260039 !important;
 }
 
-div#gatsby-focus-wrapper {
-  background-image: url(https://wordpress-930615-3276951.cloudwaysapps.com/wp-content/uploads/2023/02/Frame-1.png) !important;
-  background-position: left top !important;
+/* div#gatsby-focus-wrapper { */
+  /* background-image: url(https://wordpress-930615-3276951.cloudwaysapps.com/wp-content/uploads/2023/02/Frame-1.png) !important; */
+  /* background-position: left top !important; */
   /* background-size: auto !important; */
-  background-repeat: repeat !important;
+  /* background-repeat: repeat !important;
   background-attachment: fixed !important;
   background-position: 100%;
-  background-size: cover;
+  background-size: cover; */
+/* } */
+
+div#gatsby-focus-wrapper {
+  background: #1f082a;
 }
 
 .backroundimage{

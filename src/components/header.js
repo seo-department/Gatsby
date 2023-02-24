@@ -14,6 +14,8 @@ const Header = () => (
       alignItems: `center`,
       justifyContent: `space-between`,
     }}
+
+    
   >
   <Link to="/">
     <StaticImage src="../images/spinsforsale-logo1.png" fluid alt="Spins for sale Logo" title="Spins for sale Logo" />
